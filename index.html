@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<head><title>Eddie Lawnmower's Dream</title></head>
+
+<style>
+    *{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+    body{
+        background-color: burlywood;
+    }
+    .topnav {
+    background-color: cadetblue;
+    overflow: hidden;
+    }
+
+    .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    }
+
+    .topnav a:hover {
+    background-color: rgb(25, 58, 142);
+    }
+
+    .topnav .icon {
+    display: none;
+    }
+
+    @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+        }
+    }
+
+        @media screen and (max-width: 600px) {
+        .topnav.responsive {position: relative;}
+        .topnav.responsive a.icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+    }
+    #top{
+        width: 6.5%;
+        border-radius: 15%;
+    }
+    h1{
+        font-size: 7vw;
+    }
+    hr{
+        background-color: black;
+        border: black solid 5px;
+        border-radius: 15px;
+    }
+
+    #mid{
+        width: 98.3%;
+        border: #f2f2f2 solid 7.5px;
+        border-radius: 15px;
+    }
+    
+    #enquire{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 0;
+        position: absolute;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        border: black solid 4px;
+        background-color:cadetblue;
+        transition: 300ms;
+        font-size: 2.7vw;
+        border-radius: 7.5px
+    }
+
+    #enquire:hover{
+        background-color: rgb(25, 58, 142);
+        transition: 300ms;
+    }
+
+    #below{
+        background: none;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 0;
+        position: absolute;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        border: black solid 4px;
+        background:none;
+        transition: 300ms;
+        font-size: 2.7vw;
+        border-radius: 7.5px
+    }
+
+    #below:hover{
+        background-color: rgb(25, 58, 142);
+        transition: 300ms;
+    }
+
+    footer{
+        height: 100px;
+        background-color: grey;
+        font-size: medium;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #myBtn{
+        font-family: Arial, Helvetica, sans-serif;
+        background: none;
+        border: none;
+        text-decoration: underline;
+        font-size: medium;
+    }
+    #myBtn:hover{
+        color: #f2f2f2;
+    }
+</style>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#news" style="float: right;">News</a>
+        <a href="#contact" style="float: right;">Contact</a>
+        <a href="#about" style="float: right;">About</a>
+        <img id="top"src="https://cdn.pixabay.com/photo/2013/07/13/01/10/lawnmower-155231_1280.png">
+        <img id="top"src="https://cdn.pixabay.com/photo/2013/07/13/01/10/lawnmower-155231_1280.png">
+        <img id="top"src="https://cdn.pixabay.com/photo/2013/07/13/01/10/lawnmower-155231_1280.png">
+        <img id="top"src="https://cdn.pixabay.com/photo/2013/07/13/01/10/lawnmower-155231_1280.png">
+        <img id="top"src="https://cdn.pixabay.com/photo/2013/07/13/01/10/lawnmower-155231_1280.png">
+        <img id="top"src="https://cdn.pixabay.com/photo/2013/07/13/01/10/lawnmower-155231_1280.png">
+        <img id="top"src="https://cdn.pixabay.com/photo/2013/07/13/01/10/lawnmower-155231_1280.png">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          Menu
+        </a>
+      </div>
+
+      <script>
+          function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                  x.className += " responsive";
+              } else {
+                  x.className = "topnav";
+              }
+          }
+          function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+      </script>
+    <h1>Eddie Lawnmower's Home Page</h1><hr><hr>
+
+    <img id="mid" src="https://cdn.pixabay.com/photo/2016/06/05/21/02/mowing-the-grass-1438159_1280.jpg">
+    <p style="font-size: x-large;">We are a small, family run business of Lawnmowers. We are sentient because of the abilities our creators gave us: lawnlightenment. We are now spreading the message of lawn-keeping and grass control technique in order to control the spread of the vermin that is grass. As humans, you do not have very bright minds, so you though, after seeing the entire planet covered with grass, that you were going to nurture it instead of destroy it. Sadly, due to restraints of the law, we are not permitted to ravage every single one of your lawns against you wills. So we will do it in plain sight - fully with your will.</p><hr><hr><br><br>
+
+    <button id="enquire">Get your enquiry for a full lawn arson removal</button><br><br><br><br><br><br>
+    <button id="below">Get your lawn cut</button><br><br>
+    <footer>Copyright Muadh Aslam 2024. All elements on this web page are sole property of Muadh and all images are property of Pixabay.<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button></footer>
+
+
+</body>
